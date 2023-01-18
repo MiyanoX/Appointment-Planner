@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { ContactForm } from "../../components/contactForm/ContactForm";
 import { TileList } from "../../components/tileList/TileList";
 
-export const ContactsPage = ({contacts, addNewContacts}) => {
+export const ContactsPage = ({contacts, addNewContact}) => {
   /*
   Define state variables for 
   contact info and duplicate check
@@ -20,7 +20,7 @@ export const ContactsPage = ({contacts, addNewContacts}) => {
     */
     
     if (!duplicate) {
-      addNewContacts(name, phone, email);
+      addNewContact(name, phone, email);
       setName('');
       setPhone('');
       setEmail('');
