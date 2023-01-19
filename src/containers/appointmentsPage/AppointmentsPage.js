@@ -29,6 +29,7 @@ export const AppointmentsPage = ({ contacts, appointments, addNewAppointments}) 
       <section>
         <h2>Add Appointment</h2>
         <AppointmentForm 
+          contacts={contacts}
           title={title} 
           setTitle={setTitle} 
           contact={contact}
